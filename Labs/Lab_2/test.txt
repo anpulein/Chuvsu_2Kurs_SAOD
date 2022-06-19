@@ -1,0 +1,26 @@
+procedure LENGTH(numbers[])
+
+if(lunbers.count = 1) {
+    return 1
+}
+
+lengthOfSub[]:=new lengthOfSub[numbers.count]
+
+for i:=0 in numbers.count do {
+    lengthOfSub[i]:=1
+}
+
+for j:=1 in numbers.count do {
+    for k:=0 in k < j do {
+        if(numbers[j] > numbers[k]) {
+            lengthOfSub[j]:=lengthOfSub[k] + 1
+        }
+    }
+}
+
+max:=0
+for length in lengthOfSub do {
+    max = MAX(max, length)
+}
+
+return max;
